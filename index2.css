@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+@media screen and (max-width:550px){
+header{
+    margin: 10px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+.none
+{
+    display: none;
+}
+header .logo img
+{
+    border: 4px solid black;
+    border-radius: 50%;
+} 
+header img
+{
+    width: 80px;
+    height: 80px;
+}
+.dropdown
+{
+    display: none;
+}
+.dropdown ul li 
+{
+    list-style: none;
+}
+.dropdown ul
+{
+    position: absolute;
+    top: 5.5rem;
+    right: 0;
+    background-color:rgb(36, 36, 219) ;
+    width: 190px;
+    border-radius: 20px 20px;
+    height: 190px;
+    transition:0.5s;
+}
+.dropdown ul li a{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    transition: color 0.5s;
+
+}
+.dropdown ul li a:hover{
+    color: lightgreen;
+}
+.hamb
+{
+    position: absolute;
+    right: 4rem;
+    width: 40px;
+    height: 40px;
+}
+.show-menu{
+    display: block;
+
+}
+.container #name-1 span
+{
+    color: purple;
+}
+.container #name-1
+{
+    font-size: 30px;
+    padding-top: 3rem;
+    margin-left:2rem;
+    margin-top: 0;
+}
+.container #img-1
+{
+    width: 300px;
+    height: 300px;
+}
+/* body */
+.container
+{
+margin-left:20px ;
+margin-right: 20px;
+}
+#contact-button
+{
+    width: 100px;
+    height: 50px;
+    background: linear-gradient(blue,red);
+    color: white;
+    margin-left: 100px;
+}
+
+#nav-about:hover{
+    border-bottom: 2px solid rgb(14, 56, 132) ;   
+}
+.about{
+    margin-top: 30px;
+}
+.about #about-info
+{
+    font-family: 'Times New Roman', Times, serif;font-weight: bolder;display: flex;justify-content: center;font-size: 25px;color: rgb(36, 36, 156);
+}
+.skills{
+    margin-top: 30px;
+}
+.skills #skill
+{
+    font-family: 'Times New Roman', Times, serif;font-weight: bolder;display: flex;justify-content: center;font-size: 25px;color: rgb(36, 36, 156);
+}
+.about #about-img
+{
+    width: 300px;
+    height: 300px;
+}
+#about-me
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+#name-hi
+{
+    font-weight: bolder;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+#heighlight
+{
+    font-weight: bolder;
+    font-size:20px;
+}
+.skills #skills
+{
+    width: 300px;
+    height: 300px;
+}
+.body
+{
+    width: 250px;
+    height: 200px;
+    background-color: #4070f4;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+.skill-box .tittle
+{
+    display: block;
+    font-weight: 700;
+    color: white;
+
+}
+.skill-box .skill-bar
+{
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background:white;
+}
+.skill-bar .skill-per
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    background:lightsalmon;
+    border-radius: 6px;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-box.css
+{
+    margin-top: 20px;
+}
+.skill-bar .skill-per.css
+{
+   width: 70%;
+}
+.skill-per.js
+{
+    width: 50%;
+}
+.skill-per.react
+{
+    width: 30%;
+}
+@keyframes progress {
+    0%
+    {
+        width: 0;
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+.skill-per .tooltip
+{
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    background:lightsalmon;
+    padding: 2px;
+    border-radius: 2px;
+}
+.resume #resume
+{
+    width: 300px;
+    height: 300px;
+
+}
+.resume-box
+{
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgb(121, 111, 111);
+    display: flex;
+    justify-content: center;
+  
+    margin-bottom: 40px;
+}
+.resume embed
+{
+    width: 80%;
+   height: 340px;
+   padding: 10px;
+   margin-top: 30px;
+    
+}
+footer
+{
+    width: 100%;
+    height:50px;
+    background-color: rgb(23, 18, 18);
+}
+footer h3
+{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    line-height: 50px;
+}
+ /* desktop view */
+}
+ @media screen and (min-width:650px){ 
+    header{
+    
+        margin: 30px;
+        height: 100px;
+    display: flex;
+    }
+    header .logo img
+    {
+        border: 6px solid black;
+        border-radius: 50%;
+    }
+    .dropdown , .hamb{
+        display: none;
+    }
+    header img
+    {
+        width:100px;
+        height: 100px;    
+    }
+    header ul 
+    {
+        position: absolute;
+        right: 1rem;
+    }
+    header ul li 
+    {
+        list-style: none;
+        display: inline;
+        line-height: 100px;
+        margin-left: 20px;
+        transition: color 0.5s;
+    }
+    header ul li a:last-child{
+        margin-right: 20px;
+    }
+    header ul li a
+    {
+        font-weight: bolder;
+        font-size: 25px;
+        color: rgb(0, 31, 153);
+        text-decoration: none;
+        transition: 0.5s;
+
+    }
+    header ul li a:hover
+    {
+        color: rgb(227, 34, 0);
+    }
+    /* body */
+    
+    .container
+    {
+        margin-left:3rem;
+    }
+    .container #name-1{
+        font-size: 40px;
+        position: relative;
+        bottom: -5rem;
+        left: 7rem;
+
+    }
+    .container #img-1
+    {
+        position: relative;
+        float: right;
+        width: 600px;
+        height: 600px;
+        top: -10rem;
+    }
+    .container #name-1 span
+    {
+        color:rgb(224, 4, 209);
+    }
+    #contact-button
+    {
+        position: relative;
+        width: 90px;
+        height: 30px;
+        bottom: -7rem;
+        left: 7rem;
+        color: white;
+        background-color: blue;
+    }
+    #about-info
+    {
+        display: none;
+    }
+    #about-img
+    {
+        position: relative;
+        bottom: -11rem;
+       width: 500px;
+       height: 500px;
+
+    }
+    #about-me
+    {
+        position: relative;
+        float: right;
+        width: 500px;
+        left: 25rem;
+        top: -10rem;
+        font-size: 25px;
+    }
+    #heighlight
+    {
+    font-weight: bolder;
+    font-size:20px;
+    }
+    #name-hi
+    {
+        font-weight: bolder;
+    }
+    .skills.none{
+        display: none;
+    }
+    #skills
+    {
+        width: 600px;
+        height: 600px;
+        position:relative;
+        float: right;
+        top: -5rem;
+    }
+    .body
+    {
+       position: relative;
+       top: 13rem;
+       left: 7rem;
+       border-radius: 20px;
+       padding: 20px;
+        width: 350px;
+        height: 250px;
+        background: #4070f4;
+    }
+    .skill-box .tittle
+{
+    display: block;
+    font-weight: 700;
+    color: white;
+
+}
+.skill-box .skill-bar
+{
+    width: 100%;
+    height: 8px;
+    border-radius: 6px;
+    margin-top: 6px;
+    background:white;
+}
+.skill-bar .skill-per
+{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    background:lightsalmon;
+    border-radius: 6px;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+}
+.skill-box.css
+{
+    margin-top: 20px;
+}
+.skill-bar .skill-per.css
+{
+   width: 70%;
+}
+.skill-per.js
+{
+    width: 50%;
+}
+.skill-per.react
+{
+    width: 30%;
+}
+@keyframes progress {
+    0%
+    {
+        width: 0;
+        opacity: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+    
+}
+.skill-per .tooltip
+{
+    position: absolute;
+    right: -15px;
+    top: -30px;
+    background:lightsalmon;
+    padding: 2px;
+    border-radius: 2px;
+}
+.resume span
+    {
+        display: none;
+
+    }
+.resume img
+    {
+        position: relative;
+        width: 450px;
+        height: 450px;
+        top:20rem;
+        left: 7rem;
+    }
+    .resume-box{
+        position: relative;
+        float: right;
+        left: 23rem;
+        top: -3rem;
+      
+        background-color:grey;
+        padding: 20px;
+        width: 300px;
+        height: 300px;
+        }
+    .resume-box embed
+    {
+        height: 290px;
+    }
+    footer 
+    {
+        position: absolute;
+        display: flex;
+        bottom: -90rem;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        background-color: black;
+    }
+    footer 
+    {
+        color: white;
+        font-weight: 500;
+        line-height: 50px;
+    }
+} 
